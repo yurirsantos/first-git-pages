@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Git Pages com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## passo-a-passo
 
-## Available Scripts
+## 1 Primeiramente verificamos se está instalado
 
-In the project directory, you can run:
+Em seu terminal verifique as versões dos seguintes requisitos:
 
-### `npm start`
+<ul> 
+  <li> <code> npm -v </code> </li>
+  <li> <code> yarn -v </code> </li>
+  <li> <code> node -v </code> </li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Se caso não tenha instalado em seu computador, segue link abaixo:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<ul> 
+  <li> <a href="https://nodejs.org/en/download/"> Node </a> </li>
+  <li> <a href="https://classic.yarnpkg.com/lang/en/docs/install/#mac-stable"> Yarn </a> </li>
+</ul>
 
-### `npm test`
+## 2 Criando seu app react
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Em seu terminal rode o seguinte comando:
 
-### `npm run build`
+<code> npx create-react-app NOME-DO-SEU-PROJETO </code>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 3 Teste seu projeto
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Em seu terminal rode o seguinte comando:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<code> yarn start </code>
 
-### `npm run eject`
+Você será redirecionado para o seguinte local 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<link> http://localhost:3000 </link>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://user-images.githubusercontent.com/91801482/179429612-524697c5-0fdd-4db4-bac3-fe30c041f9bd.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 4 Criando repositório do GitHub
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Em seu GitHub crie seu repositório, após isso clone sem sua máquina com o seguinte comando pelo terminal:
 
-## Learn More
+## 1 Primeiro comando
+<code> git remote add main https://github.com/SEU-NOME-NO-GITHUB/NOME-DO-SEU-REPOSITORIO </code>
+## 2 Segundo comando
+<code>  git push --set-upstream main master </code>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 5 Instalação do gh-pages
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Em seu terminal rode o seguinte comando:
 
-### Code Splitting
+<code> yarn add gh-pages </code>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 6 Package.json
 
-### Analyzing the Bundle Size
+No arquivo <strong> package.json </strong> em seu projeto insira os seguinte comandos:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<code> "predeploy": "npm run build", </code>
+<code> "deploy": "gh-pages -d build, </code>
 
-### Making a Progressive Web App
+Desta forma:
+![image](https://user-images.githubusercontent.com/91801482/179429867-e5e7a019-2f7b-4e8c-8893-da724a03b917.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Após isso, precisamos indicar para nosso projeto, qual caminho deve ser seguindo para a página principal, para isso utilizando o seguinte comando:
 
-### Advanced Configuration
+<code> "homepage": "https://SEU-NOME-NO-GITHUB.github.io/NOME-DO-SEU-REPOSITORIO/", </code>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Desta forma:
+![image](https://user-images.githubusercontent.com/91801482/179430024-a6b02bd3-9d72-495d-a870-e97bfd1b31fe.png)
 
-### Deployment
+## 7 Deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Em seu terminal rode o seguinte comando:
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<code> npm run deploy </code>
