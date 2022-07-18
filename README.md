@@ -62,6 +62,7 @@ No arquivo <strong> package.json </strong> em seu projeto insira os seguinte com
 <li> <code> "deploy": "gh-pages -d build", </code> </li>
 
 Desta forma:
+
 ![image](https://user-images.githubusercontent.com/91801482/179429867-e5e7a019-2f7b-4e8c-8893-da724a03b917.png)
 
 Após isso, precisamos indicar para nosso projeto, qual caminho deve ser seguindo para a página principal, para isso utilizando o seguinte comando:
@@ -69,6 +70,7 @@ Após isso, precisamos indicar para nosso projeto, qual caminho deve ser seguind
 <code> "homepage": "https://SEU-NOME-NO-GITHUB.github.io/NOME-DO-SEU-REPOSITORIO/", </code>
 
 Desta forma:
+
 ![image](https://user-images.githubusercontent.com/91801482/179430024-a6b02bd3-9d72-495d-a870-e97bfd1b31fe.png)
 
 ## 7 Deploy
