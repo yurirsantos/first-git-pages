@@ -74,3 +74,15 @@ Desta forma:
 Em seu terminal rode o seguinte comando:
 
 <code> npm run deploy </code>
+
+## 8 Git pages
+
+Em seu github, vá até seu repositório, configurações e pages:
+
+![image](https://user-images.githubusercontent.com/91801482/179430162-98889bed-2c49-4171-a03f-37bbbef56e75.png)
+
+Em branch selecionea opção <strong> gh-pages </strong> conforme abaixo:
+
+![image](https://user-images.githubusercontent.com/91801482/179430221-5df7b86f-b1a7-4aae-bdee-06c44ed2fbf6.png)
+
+# <strong> PRONTO!! </strong> seu repositório agora tem uma página na web criada com React!
