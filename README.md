@@ -46,7 +46,7 @@ Em seu GitHub crie seu repositório, após isso clone sem sua máquina com o seg
 ## 1 Primeiro comando
 <code> git remote add main https://github.com/SEU-NOME-NO-GITHUB/NOME-DO-SEU-REPOSITORIO </code>
 ## 2 Segundo comando
-<code>  git push --set-upstream main master </code>
+<code>  git push --set-upstream main </code>
 
 ## 5 Instalação do gh-pages
 
