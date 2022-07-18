@@ -1,5 +1,7 @@
 # Git Pages com React
 
+Neste repositório você vai aprender passo-a-passo de como enviar seu projeto criado com React, no git pages e ter uma página web acessível para outras pessoas!
+
 ## passo-a-passo
 
 ## 1 Primeiramente verificamos se está instalado
